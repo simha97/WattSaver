@@ -13,7 +13,7 @@ const TimeForm: React.FC<TimeFormProps> = ({ settings, handleChange }) => {
       <label htmlFor="hour" className="block mb-2 text-lg font-bold">
         Välj timme:
       </label>
-      <div className="flex">
+      <div className="flex md:w-1/2">
         <select
           id="hour"
           name="time"

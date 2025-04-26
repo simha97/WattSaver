@@ -34,7 +34,7 @@ export const getDefaultSettings = () => {
   const day = String(now.getDate()).padStart(2, "0");
   const hour = String(now.getHours()).padStart(2, "0");
   return {
-    area: "SE1",
+    area: "SE3",
     date: `${month}-${day}`,
     time: hour,
   };
@@ -43,62 +43,56 @@ export const getDefaultSettings = () => {
 export const items = [
   {
     title: "En dusch",
-    description: "10 min, 160 liter vatten = ~6 kWh",
+    description: "Dusch i 10 min = ~6 kWh",
     kWh: 6,
   },
+  
   {
-    title: "Ett bad",
-    description: "200 liter vatten = ~7,5 kWh",
-    kWh: 7.5,
-  },
-  {
-    title: "Baka en pizza",
-    description: "Ugn i 30 min = ~1,1 kWh",
-    kWh: 1.1,
-  },
-  {
-    title: "Koka 1 liter vatten",
-    description: "Varmplatta i 4 min = ~0,12 kWh",
+    title: "Koka vatten",
+    description: "koka 1 liter vatten = ~0,12 kWh",
     kWh: 0.12,
   },
+
   {
-    title: "En värmare dygnet runt",
-    description: "1000W x 24 timmar = 24 kWh",
-    kWh: 24,
-  },
-  {
-    title: "Ladda elbilen",
-    description: "Nissan Leaf 10–80% = ~45 kWh",
-    kWh: 45,
-  },
-  {
-    title: "Titta på tv i en timme",
-    description: "Genomsnittlig = ~0,06 kWh",
+    title: "Titta på tv",
+    description: "Halvtimme = ~0,06 kWh",
     kWh: 0.06,
   },
   {
-    title: "En tvättmaskin",
+    title: "Tvättmaskin",
     description: "Genomsnittlig = ~0,8 kWh",
     kWh: 0.8,
   },
   {
-    title: "Ladda mobilen",
-    description: "Genomsnittlig = ~0,005 kWh",
-    kWh: 0.005,
-  },
-  {
-    title: "Kylskåp per dag",
-    description: "Genomsnittlig = ~0,44 kWh",
-    kWh: 0.44,
-  },
-  {
-    title: "Dammsug i 10 min",
+    title: "Dammsug",
     description: "Dammsugare i 10 min = ~0,33 kWh",
     kWh: 0.33,
   },
   {
-    title: "Hårtork i 10 min",
+    title: "Hårtork",
     description: "Hårtork i 10 min = ~0,33 kWh",
     kWh: 0.33,
-  }
+  },
+  {
+  title: "Ugn",
+  description: "Ugn i 30 min vid 200°C = ~0,5 kWh",
+  kWh: 0.5,
+  },
+  {
+  title: "Diskmaskin",
+  description: "Ett standardprogram = ~1,0 kWh",
+  kWh: 1.0,
+  },
+  {
+  title: "Mikrovågsugn",
+  description: "5 min på hög effekt = ~0,15 kWh",
+  kWh: 0.15,
+  },
+  {
+  title: "Strykjärn",
+  description: "Stryka i 30 min = ~0,5 kWh",
+  kWh: 0.5,
+},
+
+
 ];
